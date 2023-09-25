@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Sheet Display</title>
+    <style>
+    body {
+        font: 100% Lucida Sans, Verdana;
+        margin: 20px;
+        line-height: 26px;
+    }
+    
+    .container {
+        xmin-width: 900px;
+    }
+
+    .wrapper {
+        position: relative;
+        overflow: auto;
+    }
+
+    #top, #diebar, #bottom, .menuitem {
+        border-radius: 4px;
+        margin: 4px;
+    }
+    #top {
+        background-color: #04AA6D;
+        color: #ffffff;
+        padding: 15px;
+    }
+    
+    </style> 
+    <style>
+      
+    </style>
+
 </head>
 <body>
   <div class="container wrapper">
-    <div class="top">
-      <div class="title">
+    <div id="top">
+      <div id="title">
         <h1>Welcome to My Homepage</h1>
       </div>
       <div class="subtitle">
@@ -16,9 +47,9 @@
       </div>
 
     </div>
-    <div class="middle container"> 
-      <div class="left middle">
-        <ul>
+    <div id="menu bar"> 
+      <div id="menulist">
+        <ul id="menulist">
           <li>Stylesheet1</li>
           <li>Stylesheet2</li>
           <li>Stylesheet3</li>
@@ -26,7 +57,7 @@
           <li>No Stylesheet</li>
         </ul>
       </div>
-      <div class="middle section">
+      <div class="main">
           <h2>Same page Different Stylesheets</h2>
           <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting different stylesheets in the menu, or by selecting one of the following links: Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.</p>
           <h2>No Styles</h2>
@@ -40,7 +71,7 @@ No Stylesheet.</p>
           </p>
       </div>
     </div>    
-    <div>
+    <div id="footer">
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         </p>
