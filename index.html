@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Style Sheet Display</title>
-  <style>
+  <style> 
     body {
       font: 100% Lucida Sans, Verdana;
       margin: 20px;
@@ -18,7 +18,7 @@
 
     .wrapper {
       position: relative;
-      overflow: auto;
+      overflow: hidden;
     }
 
     #top,
@@ -113,7 +113,7 @@
     @media (max-width: 600px) {
       #menubar {
         width: auto;
-        floath: none;
+        float: none;
       }
 
       #main {
@@ -136,9 +136,9 @@
     <div class="wrapper">
       <div id="menubar">
         <ul id="menulist">
-          <li class="menuitem">Stylesheet1</li>
-          <li class="menuitem">Stylesheet2</li>
-          <li class="menuitem">No Stylesheet</li>
+          <li class="menuitem" onclick="reStyle(0)">Stylesheet1</li>
+          <li class="menuitem" onclick="reStyle(1)">Stylesheet2</li>
+          <li class="menuitem" onclick="reStyle(2)">No Stylesheet</li>
         </ul>
       </div>
       <div class="main">
@@ -153,7 +153,7 @@
           like with no stylesheet:
           No Stylesheet.</p>
       </div>
-      <div class="sidebar">
+      <div id="sidebar">
         <h3>Side-Bar</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
@@ -181,9 +181,9 @@
 
     function noStyles() {
       document.styleSheets[0].disabled = true;
-      document.styleSheets[1].disabled = true;
-      document.styleSheets[2].disabled = true;
-      document.styleSheets[3].disabled = true;
+      //document.styleSheets[1].disabled = true;
+      //document.styleSheets[2].disabled = true;
+      //document.styleSheets[3].disabled = true;
     }
 
     function reStyle(n) {
