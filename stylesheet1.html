@@ -122,6 +122,89 @@
     }
   </style>
   <style>
+    body {
+        font: 100% Courier New;
+        margin: 20px;
+        line-height: 26px;
+        background-color: goldenrod;
+        font: bold;
+    }
+
+    .container {
+        xmin-width: 900px;
+    }
+
+    .wrapper {
+        position: relative;
+        overflow: auto;
+    }
+
+    #top {
+        color: red;
+        padding: 15px;
+    }
+
+    #main {
+        padding: 10px;
+        color: rebeccapurple;
+    }
+
+    #sidebar {
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        padding: 10px;
+        width: 320px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        font-size: 80%;
+        line-height: 20px;
+    }
+
+    #bottom {
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        font-size: 70%;
+        line-height: 14px;
+    }
+
+    #top h1,#top p {
+        margin: 0;
+    }
+
+    .menuitem {
+        color: #84c754;
+        cursor: pointer;
+    }
+
+    .menuitem:nth-child(4) {
+        color:white;
+        font-weight:bold;
+    }
+
+    .menuitem:hover {
+        color: blueviolet;
+    }
+
+    a {
+        color: #ffffff;
+    }
+
+    a:hover {
+        color: #84c754;
+    }
+    @media (max-width: 600px) {
+        #sidebar {
+          width: auto;
+          margin-bottom:10px;        
+          position: relative;
+        }    
+    }
+
 
   </style>
 
@@ -143,41 +226,27 @@
       </div>
       <div class="main">
         <h1>Same page Different Stylesheets</h1>
-        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
-          the layout of this page by selecting different stylesheets in the menu, or by selecting different stylesheets
-          in
-          the menu, or by selecting one of the following links: </p>
+        <p>
+            Pick one of the following links:
+
         <br>
         <a href="#" onclick="reStyle(0)";return false">Stylesheet1</a>
         <a href="#" onclick="reStyle(1)";return false">Stylesheet2</a>
         <h2>No Styles</h2>
-        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
-          looks
-          like with no stylesheet:
+        <p>My Name is John Song and my Korean name is 송영은. I am in my 5th Semester in Handong Global University. I am majoring in Computer Science. 
           <br>
          <a href="#" onclick="noStyles();return false">No Stylesheet.</a> 
       </div>
       <div id="sidebar">
         <h3>Side-Bar</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-          suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-          vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-          et
-          iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+         This is my sidebar
         </p>
       </div>
     </div>
     <div id="footer">
       <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-        suscipit
-        lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-        velit
-        esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        This is how I set up my footer. Welcome to the Danger Zone!!!
       </p>
     </div>
   </div>
